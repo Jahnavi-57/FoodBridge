@@ -1,0 +1,33 @@
+@import "tailwindcss";
+@import "tailwindcss";
+
+body {
+  font-family: "Outfit", sans-serif;
+}
+
+@keyframes wave {
+  0%, 60%, 100% {
+    transform: rotate(0deg);
+  }
+  5% {
+    transform: rotate(14deg);
+  }
+  10% {
+    transform: rotate(-8deg);
+  }
+  15% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-4deg);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+}
+
+.wave {
+  display: inline-block;
+  transform-origin: bottom left;
+  animation: wave 4s infinite;
+}
