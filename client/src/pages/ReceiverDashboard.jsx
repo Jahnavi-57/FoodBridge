@@ -75,7 +75,7 @@ function ReceiverDashboard() {
                     const token = localStorage.getItem("token");
 
                     await fetch(
-                        "http://localhost:5000/api/receivers/location",
+                        "https://foodbridge-backend-npfa.onrender.com/api/receivers/location",
                         {
                             method: "PATCH",
                             headers: {
